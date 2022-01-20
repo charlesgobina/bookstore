@@ -1,28 +1,26 @@
-import React from 'react';
+const ADD_BOOK = 'bookStore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
-const Books = () => (
-  <div className="book-list">
-    <ul>
-      <li>
-        <span className="title">The Hunger Games</span>
-        <button type="button">Remove</button>
-      </li>
-      <li>
-        <span className="title">Dune</span>
-        <button type="button">Remove</button>
-      </li>
-      <li>
-        <span className="title">Capital in the Twenty-First Century</span>
-        <button type="button">Remove</button>
-      </li>
-    </ul>
+const initialState = [];
 
-    <h2>Add a book</h2>
-    <form>
-      <input type="text" placeholder="Add a Book" />
-      <button type="button">Add</button>
-    </form>
-  </div>
-);
+export const addBook = (payload) => ({
+  type: ADD_BOOK,
+  payload,
+});
 
-export default Books;
+export const removeBook = (payload) => ({
+  type: REMOVE_BOOK,
+  payload,
+});
+
+const reducer = (state = initialState, action) => {
+  if (action.type === ADD_BOOK) {
+    return [...state, action.payload];
+  } if (action.type === REMOVE_BOOK) {
+    const uState = state.filter((book) => book.id !== action.payload);
+    return uState;
+  }
+  return state;
+};
+
+export default reducer;

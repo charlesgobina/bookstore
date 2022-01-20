@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Books from './redux/books/books';
-import Categories from './redux/categories/categories';
+import Books from './components/bookContainer';
+import Categories from './components/categories';
 import Header from './components/Header';
 import './App.css';
 
