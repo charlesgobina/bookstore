@@ -12,9 +12,7 @@ const Books = () => {
       { books.length === 0 ? <div><p>No Books :(</p></div>
         : books.map((book) => (
           <BookList
-            id={book.id}
-            author={book.author}
-            title={book.title}
+            data={book}
             key={book.id}
           />
         ))}
