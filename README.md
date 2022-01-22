@@ -11,6 +11,9 @@ By building this application, I will learn how to use React and Redux.
 * Git
 * Gitflow
 
+## Live Demo
+[Live Demo](https://mcrvs-bookstore.netlify.app/)
+
 ## Software Requirements
 * Node.JS
 * npm
