@@ -1,34 +1,34 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { bookAdd } from '../redux/books/thunks';
 
 const AddBook = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
   const [empty, setEmpty] = useState(false);
   const resetTitle = () => {
     setTitle('');
   };
 
-  const resetAuthor = () => {
-    setAuthor('');
+  const resetCategory = () => {
+    setCategory('');
   };
 
   const submitBookToStore = (e) => {
     e.preventDefault();
-    if (title === '' || author === '') {
+    if (title === '' || category === '') {
       setEmpty(true);
     } else {
       setEmpty(false);
       const newBook = {
         id: v4(),
         title,
-        author,
+        category,
       };
-      dispatch(addBook(newBook));
-      resetAuthor();
+      dispatch(bookAdd(newBook));
+      resetCategory();
       resetTitle();
     }
   };
@@ -47,13 +47,9 @@ const AddBook = () => {
         <input
           required
           type="text"
-          placeholder="Author"
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Category"
+          placeholder="category"
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
         />
         { empty ? <small>Please fill in all fields</small>
           : '' }
