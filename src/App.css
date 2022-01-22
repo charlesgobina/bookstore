@@ -41,7 +41,6 @@ ul {
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   font-size: 0.813rem;
-  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   font-weight: bold;
@@ -52,6 +51,7 @@ ul {
 .new-links li a {
   color: #888;
 }
+
 .d-flex {
   display: flex;
 }
