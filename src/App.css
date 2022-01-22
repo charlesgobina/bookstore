@@ -21,11 +21,7 @@ ul {
 }
 
 .navi-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.875rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+  font: normal bold 1.875rem 'Poppins', sans-serif;
   line-height: normal;
   letter-spacing: normal;
   color: #0290ff;
@@ -36,14 +32,10 @@ ul {
 }
 
 .new-links li {
+  font: normal bold 0.813rem 'Poppins', sans-serif;
   margin-right: 10px;
   align-items: flex-start;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.813rem;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: bold;
   line-height: normal;
   letter-spacing: 1.9px;
 }
@@ -78,20 +70,13 @@ ul {
 }
 
 .category {
-  font-size: 0.875rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+  font: normal bold 0.875rem 'Nunito', sans-serif;
   line-height: normal;
   letter-spacing: normal;
 }
 
 .title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.375rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+  font: normal bold 1.375rem 'Poppins', sans-serif;
   line-height: normal;
   letter-spacing: -0.2px;
 }
@@ -106,11 +91,7 @@ ul {
 
 .bk-action {
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.875rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
+  font: normal normal 0.875rem 'Nunito', sans-serif;
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
@@ -138,21 +119,13 @@ ul {
 }
 
 .pernum {
-  font-family: 'Nunito', sans-serif;
-  font-size: 2rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+  font: normal normal 2rem 'Nunito', sans-serif;
   line-height: normal;
   letter-spacing: normal;
 }
 
 .pertext {
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.875rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+  font: normal normal 0.875rem 'Nunito', sans-serif;
   line-height: normal;
   letter-spacing: normal;
 }
@@ -176,38 +149,26 @@ ul {
 }
 
 .chap-text {
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.813rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
+  font: normal 300 0.813rem 'Nunito', sans-serif;
   line-height: normal;
   letter-spacing: normal;
   color: #9e9d9d;
 }
 
 .chap-sub-text {
-  font-family: 'Nunito', sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  font: normal normal 1rem 'Nunito', sans-serif;
   letter-spacing: -0.4px;
 }
 
 .chap-sub-num {
-  font-family: 'Nunito', sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
+  font: normal normal normal 0.875rem 'Nunito', sans-serif;
   line-height: normal;
   letter-spacing: -0.4px;
 }
 
 .chap-num {
   gap: 5px;
+  align-items: center;
 }
 
 .chap-btn {
@@ -231,11 +192,7 @@ ul {
 }
 
 .add-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.25rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+  font: normal bold 1.25rem 'Poppins', sans-serif;
   line-height: normal;
   letter-spacing: -0.18px;
   color: #888;
@@ -264,6 +221,7 @@ input {
 }
 
 .input-button {
+  font: normal bold normal 0.813rem 'Nunito', sans-serif;
   width: 15%;
   height: 2.813rem;
   margin: 1.188rem 0 0 2.125rem;
@@ -272,11 +230,6 @@ input {
   background-color: #0290ff;
   border: none;
   outline: none;
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.813rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
