@@ -6,7 +6,6 @@ import BookList from './booklist';
 
 const Books = () => {
   const books = useSelector((state) => state.booksReducer);
-  console.log(books);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchBooks());
@@ -17,7 +16,7 @@ const Books = () => {
         : books.map((book) => (
           <BookList
             data={book}
-            key={book.bookId}
+            key={book.id}
           />
         ))}
       <AddBook />

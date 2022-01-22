@@ -23,8 +23,7 @@ const reducer = (state = initialState, action) => {
   if (action.type === ADD_BOOK) {
     return [...state, action.payload];
   } if (action.type === REMOVE_BOOK) {
-    const uState = state.filter((book) => book.id !== action.payload);
-    return uState;
+    return state.filter((book) => book.id !== action.payload);
   } if (action.type === FETCH_BOOK) {
     return action.payload;
   }
